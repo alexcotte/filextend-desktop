@@ -9,6 +9,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ListView;
 import javafx.scene.image.Image;
 import javafx.scene.input.DragEvent;
 import javafx.scene.input.Dragboard;
@@ -21,7 +22,7 @@ public class MainUI extends Application{
 	
 	
     public AnchorPane ancSend; //--->>> dragDrop element
-	
+	public ListView listToSend;
     /*
      * start method Application JavaFX
      * */
@@ -84,6 +85,7 @@ public class MainUI extends Application{
 	        if (db.hasFiles()) {
 	        	List<File> files = db.getFiles();
 	        	if(!files.isEmpty()){
+	        		listToSend.setVisible(Boolean.TRUE);
 	        		for(File file: files){
 	        			System.out.println(file.getAbsolutePath());
 	        		}
