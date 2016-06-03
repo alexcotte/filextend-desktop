@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane fx:id="tabPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.71" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.alexcotte.UI.MainUI">
+  <tabs>
+    <Tab fx:id="tabSend" text="Send">
+      <content>
+        <AnchorPane fx:id="ancSend" minHeight="0.0" minWidth="0.0" onDragOver="#mouseDragOver" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="286.0" layoutY="177.0" text="Nothing" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab fx:id="tabRecive" text="Recive">
+      <content>
+        <AnchorPane fx:id="ancRecive" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="278.0" layoutY="177.0" text="Nothing" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab fx:id="tabOptions" text="Options">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="22.0" text="Recive Folder " />
+                  <CheckBox layoutX="516.0" layoutY="22.0" mnemonicParsing="false" text="default" />
+                  <TextField layoutX="119.0" layoutY="18.0" prefHeight="25.0" prefWidth="387.0" />
+                  <Label layoutX="14.0" layoutY="57.0" text="Limit file size(MB)" />
+                  <TextField accessibleRole="SPINNER" layoutX="119.0" layoutY="53.0" prefHeight="25.0" prefWidth="105.0" />
+                  <Label layoutX="228.0" layoutY="57.0" text="(0= unlimit)" textFill="#807777" />
+                  <Label layoutX="310.0" layoutY="57.0" text="Max File Tansfer" />
+                  <TextField accessibleRole="SPINNER" layoutX="401.0" layoutY="53.0" prefHeight="25.0" prefWidth="105.0" />
+                  <Label layoutX="513.0" layoutY="57.0" text="(0= unlimit)" textFill="#807777" />
+                  <Separator layoutX="7.0" layoutY="90.0" prefHeight="13.0" prefWidth="600.0" />
+                  <Button layoutX="522.0" layoutY="103.0" mnemonicParsing="false" text="Apply" />
+                  <ImageView fitHeight="198.0" fitWidth="236.0" layoutX="23.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="228.0" layoutY="142.0" prefHeight="17.0" prefWidth="124.0" text="Info to Pair" textAlignment="CENTER" />
+                  <Label layoutX="310.0" layoutY="186.0" text="Host" />
+                  <Label layoutX="370.0" layoutY="186.0" prefHeight="17.0" prefWidth="183.0" text="Host" />
+                  <Label layoutX="310.0" layoutY="220.0" text="Port" />
+                  <Label layoutX="370.0" layoutY="220.0" prefHeight="17.0" prefWidth="183.0" text="Host" />
+                  <Label layoutX="310.0" layoutY="255.0" text="Phrase" />
+                  <Label layoutX="370.0" layoutY="255.0" prefHeight="17.0" prefWidth="212.0" text="Label" />
+                  <Button layoutX="420.0" layoutY="303.0" mnemonicParsing="false" text="Refresh" />
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>

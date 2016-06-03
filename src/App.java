@@ -1,10 +1,12 @@
+import com.github.com.alexcotte.filextend.desktop.UI.MainUI;
+
 
 
 public class App {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		final MainUI app = new MainUI();
+		app.run();
 	}
 
 }
