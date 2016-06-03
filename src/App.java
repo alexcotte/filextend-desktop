@@ -1,4 +1,4 @@
-import com.github.com.alexcotte.filextend.desktop.UI.MainUI;
+import com.github.alexcotte.filextend.desktop.UI.MainUI;
 
 
 

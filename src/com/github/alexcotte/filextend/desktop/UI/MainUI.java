@@ -1,4 +1,4 @@
-package com.github.com.alexcotte.filextend.desktop.UI;
+package com.github.alexcotte.filextend.desktop.UI;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
